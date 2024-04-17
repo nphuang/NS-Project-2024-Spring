@@ -1,9 +1,8 @@
-# docker build -t socks5-server .
+```bash
+chmod +x run.sh
+./run.sh
+```
+```bash
+curl -vvv -x socks5h://localhost:1080 $(python3 -c "print(('A'*10000), end='')")
+```
 
-# docker run -d -p 1080:1080 --name socks5-server socks5-server
-
-# docker stop socks5-server	
-
-# docker rm socks5-server
-
-# docker rmi socks5-server
