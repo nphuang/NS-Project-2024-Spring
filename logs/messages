@@ -1,0 +1,389 @@
+May 27 12:49:03 b1235304fc34 kernel: Booting Linux on physical CPU 0x0000000000 [0x610f0000]
+May 27 12:49:03 b1235304fc34 kernel: Linux version 6.6.22-linuxkit (root@buildkitsandbox) (gcc (Alpine 13.2.1_git20231014) 13.2.1 20231014, GNU ld (GNU Binutils) 2.41) #1 SMP Fri Mar 29 12:21:27 UTC 2024
+May 27 12:49:03 b1235304fc34 kernel: Zone ranges:
+May 27 12:49:03 b1235304fc34 kernel:   DMA      [mem 0x0000000070000000-0x00000000ffffffff]
+May 27 12:49:03 b1235304fc34 kernel:   DMA32    empty
+May 27 12:49:03 b1235304fc34 kernel:   Normal   [mem 0x0000000100000000-0x0000000269bfffff]
+May 27 12:49:03 b1235304fc34 kernel: Movable zone start for each node
+May 27 12:49:03 b1235304fc34 kernel: Early memory node ranges
+May 27 12:49:03 b1235304fc34 kernel:   node   0: [mem 0x0000000070000000-0x0000000269bfffff]
+May 27 12:49:03 b1235304fc34 kernel: Initmem setup node 0 [mem 0x0000000070000000-0x0000000269bfffff]
+May 27 12:49:03 b1235304fc34 kernel: On node 0, zone Normal: 25600 pages in unavailable ranges
+May 27 12:49:03 b1235304fc34 kernel: psci: probing for conduit method from DT.
+May 27 12:49:03 b1235304fc34 kernel: psci: PSCIv1.1 detected in firmware.
+May 27 12:49:03 b1235304fc34 kernel: psci: Using standard PSCI v0.2 function IDs
+May 27 12:49:03 b1235304fc34 kernel: psci: Trusted OS migration not required
+May 27 12:49:03 b1235304fc34 kernel: psci: SMC Calling Convention v1.0
+May 27 12:49:03 b1235304fc34 kernel: percpu: Embedded 32 pages/cpu s90280 r8192 d32600 u131072
+May 27 12:49:03 b1235304fc34 kernel: pcpu-alloc: s90280 r8192 d32600 u131072 alloc=32*4096
+May 27 12:49:03 b1235304fc34 kernel: pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+May 27 12:49:03 b1235304fc34 kernel: Detected PIPT I-cache on CPU0
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: Address authentication (IMP DEF algorithm)
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: GIC system register CPU interface
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: Spectre-v4
+May 27 12:49:03 b1235304fc34 kernel: alternatives: applying boot alternatives
+May 27 12:49:03 b1235304fc34 kernel: Kernel command line: init=/init loglevel=1 root=/dev/vdb rootfstype=erofs ro vsyscall=emulate panic=0 linuxkit.unified_cgroup_hierarchy=1 console=hvc0   virtio_net.disable_csum=1 eth0.IPNet=192.168.65.3/24 eth0.router=192.168.65.1 eth0.mtu=65535 eth1.dhcp vpnkit.connect=connect://2/1999 com.docker.VMID=0cd3f2c9-4b62-4cd9-8b39-e30e784f8745
+May 27 12:49:03 b1235304fc34 kernel: Unknown kernel command line parameters "vsyscall=emulate", will be passed to user space.
+May 27 12:49:03 b1235304fc34 kernel: Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+May 27 12:49:03 b1235304fc34 kernel: Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+May 27 12:49:03 b1235304fc34 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 2039184
+May 27 12:49:03 b1235304fc34 kernel: mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+May 27 12:49:03 b1235304fc34 kernel: software IO TLB: area num 8.
+May 27 12:49:03 b1235304fc34 kernel: software IO TLB: mapped [mem 0x00000000fbfff000-0x00000000fffff000] (64MB)
+May 27 12:49:03 b1235304fc34 kernel: Memory: 8023800K/8286208K available (17152K kernel code, 2608K rwdata, 9220K rodata, 5568K init, 729K bss, 262408K reserved, 0K cma-reserved)
+May 27 12:49:03 b1235304fc34 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+May 27 12:49:03 b1235304fc34 kernel: ftrace: allocating 50871 entries in 199 pages
+May 27 12:49:03 b1235304fc34 kernel: ftrace: allocated 199 pages with 5 groups
+May 27 12:49:03 b1235304fc34 kernel: trace event string verifier disabled
+May 27 12:49:03 b1235304fc34 kernel: rcu: Hierarchical RCU implementation.
+May 27 12:49:03 b1235304fc34 kernel: rcu: 	RCU restricting CPUs from NR_CPUS=24 to nr_cpu_ids=8.
+May 27 12:49:03 b1235304fc34 kernel: 	Rude variant of Tasks RCU enabled.
+May 27 12:49:03 b1235304fc34 kernel: 	Tracing variant of Tasks RCU enabled.
+May 27 12:49:03 b1235304fc34 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+May 27 12:49:03 b1235304fc34 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+May 27 12:49:03 b1235304fc34 kernel: NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+May 27 12:49:03 b1235304fc34 kernel: GICv3: 224 SPIs implemented
+May 27 12:49:03 b1235304fc34 kernel: GICv3: 0 Extended SPIs implemented
+May 27 12:49:03 b1235304fc34 kernel: Root IRQ handler: gic_handle_irq
+May 27 12:49:03 b1235304fc34 kernel: GICv3: GICv3 features: 16 PPIs, RSS
+May 27 12:49:03 b1235304fc34 kernel: GICv3: CPU0: found redistributor 0 region 0:0x0000000010010000
+May 27 12:49:03 b1235304fc34 kernel: rcu: 	Offload RCU callbacks from CPUs: 0-7.
+May 27 12:49:03 b1235304fc34 kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+May 27 12:49:03 b1235304fc34 kernel: arch_timer: cp15 timer(s) running at 24.00MHz (virt).
+May 27 12:49:03 b1235304fc34 kernel: clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+May 27 12:49:03 b1235304fc34 kernel: sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+May 27 12:49:03 b1235304fc34 kernel: Console: colour dummy device 80x25
+May 27 12:49:03 b1235304fc34 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=24000)
+May 27 12:49:03 b1235304fc34 kernel: pid_max: default: 32768 minimum: 301
+May 27 12:49:03 b1235304fc34 kernel: Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+May 27 12:49:03 b1235304fc34 kernel: Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+May 27 12:49:03 b1235304fc34 kernel: cacheinfo: Unable to detect cache hierarchy for CPU 0
+May 27 12:49:03 b1235304fc34 kernel: RCU Tasks Rude: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1.
+May 27 12:49:03 b1235304fc34 kernel: RCU Tasks Trace: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1.
+May 27 12:49:03 b1235304fc34 kernel: rcu: Hierarchical SRCU implementation.
+May 27 12:49:03 b1235304fc34 kernel: rcu: 	Max phase no-delay instances is 400.
+May 27 12:49:03 b1235304fc34 kernel: smp: Bringing up secondary CPUs ...
+May 27 12:49:03 b1235304fc34 kernel: Detected PIPT I-cache on CPU1
+May 27 12:49:03 b1235304fc34 kernel: GICv3: CPU1: found redistributor 1 region 0:0x0000000010030000
+May 27 12:49:03 b1235304fc34 kernel: CPU1: Booted secondary processor 0x0000000001 [0x610f0000]
+May 27 12:49:03 b1235304fc34 kernel: Detected PIPT I-cache on CPU2
+May 27 12:49:03 b1235304fc34 kernel: GICv3: CPU2: found redistributor 2 region 0:0x0000000010050000
+May 27 12:49:03 b1235304fc34 kernel: CPU2: Booted secondary processor 0x0000000002 [0x610f0000]
+May 27 12:49:03 b1235304fc34 kernel: Detected PIPT I-cache on CPU3
+May 27 12:49:03 b1235304fc34 kernel: GICv3: CPU3: found redistributor 3 region 0:0x0000000010070000
+May 27 12:49:03 b1235304fc34 kernel: CPU3: Booted secondary processor 0x0000000003 [0x610f0000]
+May 27 12:49:03 b1235304fc34 kernel: Detected PIPT I-cache on CPU4
+May 27 12:49:03 b1235304fc34 kernel: GICv3: CPU4: found redistributor 4 region 0:0x0000000010090000
+May 27 12:49:03 b1235304fc34 kernel: CPU4: Booted secondary processor 0x0000000004 [0x610f0000]
+May 27 12:49:03 b1235304fc34 kernel: Detected PIPT I-cache on CPU5
+May 27 12:49:03 b1235304fc34 kernel: GICv3: CPU5: found redistributor 5 region 0:0x00000000100b0000
+May 27 12:49:03 b1235304fc34 kernel: CPU5: Booted secondary processor 0x0000000005 [0x610f0000]
+May 27 12:49:03 b1235304fc34 kernel: Detected PIPT I-cache on CPU6
+May 27 12:49:03 b1235304fc34 kernel: GICv3: CPU6: found redistributor 6 region 0:0x00000000100d0000
+May 27 12:49:03 b1235304fc34 kernel: CPU6: Booted secondary processor 0x0000000006 [0x610f0000]
+May 27 12:49:03 b1235304fc34 kernel: Detected PIPT I-cache on CPU7
+May 27 12:49:03 b1235304fc34 kernel: GICv3: CPU7: found redistributor 7 region 0:0x00000000100f0000
+May 27 12:49:03 b1235304fc34 kernel: CPU7: Booted secondary processor 0x0000000007 [0x610f0000]
+May 27 12:49:03 b1235304fc34 kernel: smp: Brought up 1 node, 8 CPUs
+May 27 12:49:03 b1235304fc34 kernel: SMP: Total of 8 processors activated.
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: ARMv8.4 Translation Table Level
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: Common not Private translations
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: CRC32 instructions
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: Data independent timing control (DIT)
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: E0PD
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: Fine Grained Traps
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: Generic authentication (IMP DEF algorithm)
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: RCpc load-acquire (LDAPR)
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: LSE atomic instructions
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: Privileged Access Never
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: RAS Extension Support
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: Speculation barrier (SB)
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: TLB range maintenance instructions
+May 27 12:49:03 b1235304fc34 kernel: CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+May 27 12:49:03 b1235304fc34 kernel: CPU: All CPU(s) started at EL1
+May 27 12:49:03 b1235304fc34 kernel: alternatives: applying system-wide alternatives
+May 27 12:49:03 b1235304fc34 kernel: devtmpfs: initialized
+May 27 12:49:03 b1235304fc34 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+May 27 12:49:03 b1235304fc34 kernel: futex hash table entries: 2048 (order: 5, 131072 bytes, linear)
+May 27 12:49:03 b1235304fc34 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+May 27 12:49:03 b1235304fc34 kernel: DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+May 27 12:49:03 b1235304fc34 kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+May 27 12:49:03 b1235304fc34 kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+May 27 12:49:03 b1235304fc34 kernel: audit: initializing netlink subsys (disabled)
+May 27 12:49:03 b1235304fc34 kernel: audit: type=2000 audit(0.005:1): state=initialized audit_enabled=0 res=1
+May 27 12:49:03 b1235304fc34 kernel: cpuidle: using governor menu
+May 27 12:49:03 b1235304fc34 kernel: hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+May 27 12:49:03 b1235304fc34 kernel: ASID allocator initialised with 256 entries
+May 27 12:49:03 b1235304fc34 kernel: Serial: AMBA PL011 UART driver
+May 27 12:49:03 b1235304fc34 kernel: Modules: 23904 pages in range for non-PLT usage
+May 27 12:49:03 b1235304fc34 kernel: Modules: 515424 pages in range for PLT usage
+May 27 12:49:03 b1235304fc34 kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+May 27 12:49:03 b1235304fc34 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+May 27 12:49:03 b1235304fc34 kernel: HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+May 27 12:49:03 b1235304fc34 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+May 27 12:49:03 b1235304fc34 kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+May 27 12:49:03 b1235304fc34 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+May 27 12:49:03 b1235304fc34 kernel: HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+May 27 12:49:03 b1235304fc34 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+May 27 12:49:03 b1235304fc34 kernel: raid6: skipped pq benchmark and selected neonx8
+May 27 12:49:03 b1235304fc34 kernel: raid6: using neon recovery algorithm
+May 27 12:49:03 b1235304fc34 kernel: usbcore: registered new interface driver usbfs
+May 27 12:49:03 b1235304fc34 kernel: usbcore: registered new interface driver hub
+May 27 12:49:03 b1235304fc34 kernel: usbcore: registered new device driver usb
+May 27 12:49:03 b1235304fc34 kernel: pps_core: LinuxPPS API ver. 1 registered
+May 27 12:49:03 b1235304fc34 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+May 27 12:49:03 b1235304fc34 kernel: vgaarb: loaded
+May 27 12:49:03 b1235304fc34 kernel: clocksource: Switched to clocksource arch_sys_counter
+May 27 12:49:03 b1235304fc34 kernel: VFS: Disk quotas dquot_6.6.0
+May 27 12:49:03 b1235304fc34 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+May 27 12:49:03 b1235304fc34 kernel: FS-Cache: Loaded
+May 27 12:49:03 b1235304fc34 kernel: CacheFiles: Loaded
+May 27 12:49:03 b1235304fc34 kernel: NET: Registered PF_INET protocol family
+May 27 12:49:03 b1235304fc34 kernel: IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+May 27 12:49:03 b1235304fc34 kernel: tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+May 27 12:49:03 b1235304fc34 kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+May 27 12:49:03 b1235304fc34 kernel: TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+May 27 12:49:03 b1235304fc34 kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+May 27 12:49:03 b1235304fc34 kernel: TCP: Hash tables configured (established 65536 bind 65536)
+May 27 12:49:03 b1235304fc34 kernel: UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+May 27 12:49:03 b1235304fc34 kernel: UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+May 27 12:49:03 b1235304fc34 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+May 27 12:49:03 b1235304fc34 kernel: RPC: Registered named UNIX socket transport module.
+May 27 12:49:03 b1235304fc34 kernel: RPC: Registered udp transport module.
+May 27 12:49:03 b1235304fc34 kernel: RPC: Registered tcp transport module.
+May 27 12:49:03 b1235304fc34 kernel: RPC: Registered tcp-with-tls transport module.
+May 27 12:49:03 b1235304fc34 kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+May 27 12:49:03 b1235304fc34 kernel: NET: Registered PF_XDP protocol family
+May 27 12:49:03 b1235304fc34 kernel: PCI: CLS 0 bytes, default 64
+May 27 12:49:03 b1235304fc34 kernel: workingset: timestamp_bits=46 max_order=21 bucket_order=0
+May 27 12:49:03 b1235304fc34 kernel: zbud: loaded
+May 27 12:49:03 b1235304fc34 kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+May 27 12:49:03 b1235304fc34 kernel: NFS: Registering the id_resolver key type
+May 27 12:49:03 b1235304fc34 kernel: Key type id_resolver registered
+May 27 12:49:03 b1235304fc34 kernel: Key type id_legacy registered
+May 27 12:49:03 b1235304fc34 kernel: nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+May 27 12:49:03 b1235304fc34 kernel: nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+May 27 12:49:03 b1235304fc34 kernel: Key type cifs.idmap registered
+May 27 12:49:03 b1235304fc34 kernel: ntfs: driver 2.1.32 [Flags: R/O].
+May 27 12:49:03 b1235304fc34 kernel: fuse: init (API version 7.39)
+May 27 12:49:03 b1235304fc34 kernel: SGI XFS with security attributes, no debug enabled
+May 27 12:49:03 b1235304fc34 kernel: 9p: Installing v9fs 9p2000 file system support
+May 27 12:49:03 b1235304fc34 kernel: NET: Registered PF_ALG protocol family
+May 27 12:49:03 b1235304fc34 kernel: xor: measuring software checksum speed
+May 27 12:49:03 b1235304fc34 kernel:    8regs           : 47836 MB/sec
+May 27 12:49:03 b1235304fc34 kernel:    32regs          : 45722 MB/sec
+May 27 12:49:03 b1235304fc34 kernel:    arm64_neon      : 59219 MB/sec
+May 27 12:49:03 b1235304fc34 kernel: xor: using function: arm64_neon (59219 MB/sec)
+May 27 12:49:03 b1235304fc34 kernel: Key type asymmetric registered
+May 27 12:49:03 b1235304fc34 kernel: Asymmetric key parser 'x509' registered
+May 27 12:49:03 b1235304fc34 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+May 27 12:49:03 b1235304fc34 kernel: io scheduler mq-deadline registered
+May 27 12:49:03 b1235304fc34 kernel: io scheduler kyber registered
+May 27 12:49:03 b1235304fc34 kernel: pl061_gpio 20060000.pl061: PL061 GPIO chip registered
+May 27 12:49:03 b1235304fc34 kernel: pci-host-generic 40000000.pci: host bridge /pci ranges:
+May 27 12:49:03 b1235304fc34 kernel: pci-host-generic 40000000.pci:       IO 0x006fff0000..0x006fffffff -> 0x0000000000
+May 27 12:49:03 b1235304fc34 kernel: pci-host-generic 40000000.pci:      MEM 0x0050000000..0x006ffdffff -> 0x0050000000
+May 27 12:49:03 b1235304fc34 kernel: pci-host-generic 40000000.pci:      MEM 0x0280000000..0x02bfffffff -> 0x0280000000
+May 27 12:49:03 b1235304fc34 kernel: pci-host-generic 40000000.pci: ECAM at [mem 0x40000000-0x4fffffff] for [bus 00-ff]
+May 27 12:49:03 b1235304fc34 kernel: pci-host-generic 40000000.pci: PCI host bridge to bus 0000:00
+May 27 12:49:03 b1235304fc34 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+May 27 12:49:03 b1235304fc34 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+May 27 12:49:03 b1235304fc34 kernel: pci_bus 0000:00: root bus resource [mem 0x50000000-0x6ffdffff]
+May 27 12:49:03 b1235304fc34 kernel: pci_bus 0000:00: root bus resource [mem 0x280000000-0x2bfffffff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:00.0: [106b:1a05] type 00 class 0x060000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:01.0: [1af4:1041] type 00 class 0x020000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:01.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:01.0: reg 0x18: [mem 0x00000000-0x0000003f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:05.0: [1af4:1043] type 00 class 0x078000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:05.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:05.0: reg 0x18: [mem 0x00000000-0x0000007f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:06.0: [1af4:1042] type 00 class 0x018000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:06.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:06.0: reg 0x18: [mem 0x00000000-0x0000003f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:07.0: [1af4:1042] type 00 class 0x018000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:07.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:07.0: reg 0x18: [mem 0x00000000-0x0000003f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:08.0: [1af4:1042] type 00 class 0x018000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:08.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:08.0: reg 0x18: [mem 0x00000000-0x0000003f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:09.0: [1af4:105a] type 00 class 0x018000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:09.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:09.0: reg 0x18: [mem 0x00000000-0x0000003f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0a.0: [1af4:105a] type 00 class 0x018000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0a.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0a.0: reg 0x18: [mem 0x00000000-0x0000003f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0b.0: [1af4:105a] type 00 class 0x018000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0b.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0b.0: reg 0x18: [mem 0x00000000-0x0000003f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0c.0: [1af4:105a] type 00 class 0x018000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0c.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0c.0: reg 0x18: [mem 0x00000000-0x0000003f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0d.0: [1af4:105a] type 00 class 0x018000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0d.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0d.0: reg 0x18: [mem 0x00000000-0x0000003f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0e.0: [1af4:105a] type 00 class 0x018000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0e.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0e.0: reg 0x18: [mem 0x00000000-0x0000003f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0f.0: [1af4:1053] type 00 class 0x078000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0f.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0f.0: reg 0x18: [mem 0x00000000-0x0000007f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:10.0: [1af4:1044] type 00 class 0x100000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:10.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:10.0: reg 0x18: [mem 0x00000000-0x0000003f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:11.0: [1af4:1045] type 00 class 0x058000
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:11.0: reg 0x10: [mem 0x00000000-0x00003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:11.0: reg 0x18: [mem 0x00000000-0x0000003f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:01.0: BAR 0: assigned [mem 0x50000000-0x50003fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:05.0: BAR 0: assigned [mem 0x50004000-0x50007fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:06.0: BAR 0: assigned [mem 0x50008000-0x5000bfff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:07.0: BAR 0: assigned [mem 0x5000c000-0x5000ffff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:08.0: BAR 0: assigned [mem 0x50010000-0x50013fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:09.0: BAR 0: assigned [mem 0x50014000-0x50017fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0a.0: BAR 0: assigned [mem 0x50018000-0x5001bfff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0b.0: BAR 0: assigned [mem 0x5001c000-0x5001ffff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0c.0: BAR 0: assigned [mem 0x50020000-0x50023fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0d.0: BAR 0: assigned [mem 0x50024000-0x50027fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0e.0: BAR 0: assigned [mem 0x50028000-0x5002bfff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0f.0: BAR 0: assigned [mem 0x5002c000-0x5002ffff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:10.0: BAR 0: assigned [mem 0x50030000-0x50033fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:11.0: BAR 0: assigned [mem 0x50034000-0x50037fff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:05.0: BAR 2: assigned [mem 0x50038000-0x5003807f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0f.0: BAR 2: assigned [mem 0x50038080-0x500380ff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:01.0: BAR 2: assigned [mem 0x50038100-0x5003813f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:06.0: BAR 2: assigned [mem 0x50038140-0x5003817f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:07.0: BAR 2: assigned [mem 0x50038180-0x500381bf]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:08.0: BAR 2: assigned [mem 0x500381c0-0x500381ff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:09.0: BAR 2: assigned [mem 0x50038200-0x5003823f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0a.0: BAR 2: assigned [mem 0x50038240-0x5003827f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0b.0: BAR 2: assigned [mem 0x50038280-0x500382bf]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0c.0: BAR 2: assigned [mem 0x500382c0-0x500382ff]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0d.0: BAR 2: assigned [mem 0x50038300-0x5003833f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:0e.0: BAR 2: assigned [mem 0x50038340-0x5003837f]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:10.0: BAR 2: assigned [mem 0x50038380-0x500383bf]
+May 27 12:49:03 b1235304fc34 kernel: pci 0000:00:11.0: BAR 2: assigned [mem 0x500383c0-0x500383ff]
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:01.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:05.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:06.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:07.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:08.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:09.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:0a.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:0b.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:0c.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:0d.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:0e.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:0f.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:10.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: virtio-pci 0000:00:11.0: enabling device (0000 -> 0002)
+May 27 12:49:03 b1235304fc34 kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+May 27 12:49:03 b1235304fc34 kernel: printk: console [hvc0] enabled
+May 27 12:49:03 b1235304fc34 kernel: random: crng init done
+May 27 12:49:03 b1235304fc34 kernel: brd: module loaded
+May 27 12:49:03 b1235304fc34 kernel: loop: module loaded
+May 27 12:49:03 b1235304fc34 kernel: virtio_blk virtio2: 1/0/0 default/read/poll queues
+May 27 12:49:03 b1235304fc34 kernel: virtio_blk virtio2: [vda] 124999680 512-byte logical blocks (64.0 GB/59.6 GiB)
+May 27 12:49:03 b1235304fc34 kernel:  vda: vda1
+May 27 12:49:03 b1235304fc34 kernel: virtio_blk virtio3: 1/0/0 default/read/poll queues
+May 27 12:49:03 b1235304fc34 kernel: virtio_blk virtio3: [vdb] 245176 512-byte logical blocks (126 MB/120 MiB)
+May 27 12:49:03 b1235304fc34 kernel: virtio_blk virtio4: 1/0/0 default/read/poll queues
+May 27 12:49:03 b1235304fc34 kernel: virtio_blk virtio4: [vdc] 747008 512-byte logical blocks (382 MB/365 MiB)
+May 27 12:49:03 b1235304fc34 kernel: wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+May 27 12:49:03 b1235304fc34 kernel: wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+May 27 12:49:03 b1235304fc34 kernel: tun: Universal TUN/TAP device driver, 1.6
+May 27 12:49:03 b1235304fc34 kernel: PPP generic driver version 2.4.2
+May 27 12:49:03 b1235304fc34 kernel: PPP BSD Compression module registered
+May 27 12:49:03 b1235304fc34 kernel: PPP Deflate Compression module registered
+May 27 12:49:03 b1235304fc34 kernel: PPP MPPE Compression module registered
+May 27 12:49:03 b1235304fc34 kernel: NET: Registered PF_PPPOX protocol family
+May 27 12:49:03 b1235304fc34 kernel: PPTP driver version 0.8.5
+May 27 12:49:03 b1235304fc34 kernel: vhci_hcd vhci_hcd.0: USB/IP Virtual Host Controller
+May 27 12:49:03 b1235304fc34 kernel: vhci_hcd vhci_hcd.0: new USB bus registered, assigned bus number 1
+May 27 12:49:03 b1235304fc34 kernel: vhci_hcd: created sysfs vhci_hcd.0
+May 27 12:49:03 b1235304fc34 kernel: hub 1-0:1.0: USB hub found
+May 27 12:49:03 b1235304fc34 kernel: hub 1-0:1.0: 8 ports detected
+May 27 12:49:03 b1235304fc34 kernel: vhci_hcd vhci_hcd.0: USB/IP Virtual Host Controller
+May 27 12:49:03 b1235304fc34 kernel: vhci_hcd vhci_hcd.0: new USB bus registered, assigned bus number 2
+May 27 12:49:03 b1235304fc34 kernel: usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+May 27 12:49:03 b1235304fc34 kernel: hub 2-0:1.0: USB hub found
+May 27 12:49:03 b1235304fc34 kernel: hub 2-0:1.0: 8 ports detected
+May 27 12:49:03 b1235304fc34 kernel: rtc-pl031 20050000.pl031: registered as rtc0
+May 27 12:49:03 b1235304fc34 kernel: rtc-pl031 20050000.pl031: setting system clock to 2024-05-27T12:49:02 UTC (1716814142)
+May 27 12:49:03 b1235304fc34 kernel: i2c_dev: i2c /dev entries driver
+May 27 12:49:03 b1235304fc34 kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+May 27 12:49:03 b1235304fc34 kernel: usbcore: registered new interface driver usbhid
+May 27 12:49:03 b1235304fc34 kernel: usbhid: USB HID core driver
+May 27 12:49:03 b1235304fc34 kernel: GACT probability on
+May 27 12:49:03 b1235304fc34 kernel: Mirror/redirect action on
+May 27 12:49:03 b1235304fc34 kernel: Simple TC action Loaded
+May 27 12:49:03 b1235304fc34 kernel: netem: version 1.3
+May 27 12:49:03 b1235304fc34 kernel: u32 classifier
+May 27 12:49:03 b1235304fc34 kernel:     Performance counters on
+May 27 12:49:03 b1235304fc34 kernel:     input device check on
+May 27 12:49:03 b1235304fc34 kernel:     Actions configured
+May 27 12:49:03 b1235304fc34 kernel: xt_time: kernel timezone is -0000
+May 27 12:49:03 b1235304fc34 kernel: IPVS: Registered protocols (TCP, UDP)
+May 27 12:49:03 b1235304fc34 kernel: IPVS: Connection hash table configured (size=4096, memory=32Kbytes)
+May 27 12:49:03 b1235304fc34 kernel: IPVS: Each connection entry needs 288 bytes at least
+May 27 12:49:03 b1235304fc34 kernel: IPVS: ipvs loaded.
+May 27 12:49:03 b1235304fc34 kernel: IPVS: [rr] scheduler registered.
+May 27 12:49:03 b1235304fc34 kernel: IPVS: [wrr] scheduler registered.
+May 27 12:49:03 b1235304fc34 kernel: IPVS: [sh] scheduler registered.
+May 27 12:49:03 b1235304fc34 kernel: ipip: IPv4 and MPLS over IPv4 tunneling driver
+May 27 12:49:03 b1235304fc34 kernel: gre: GRE over IPv4 demultiplexor driver
+May 27 12:49:03 b1235304fc34 kernel: ip_gre: GRE over IPv4 tunneling driver
+May 27 12:49:03 b1235304fc34 kernel: IPv4 over IPsec tunneling driver
+May 27 12:49:03 b1235304fc34 kernel: Initializing XFRM netlink socket
+May 27 12:49:03 b1235304fc34 kernel: NET: Registered PF_INET6 protocol family
+May 27 12:49:03 b1235304fc34 kernel: Segment Routing with IPv6
+May 27 12:49:03 b1235304fc34 kernel: In-situ OAM (IOAM) with IPv6
+May 27 12:49:03 b1235304fc34 kernel: mip6: Mobile IPv6
+May 27 12:49:03 b1235304fc34 kernel: sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+May 27 12:49:03 b1235304fc34 kernel: ip6_gre: GRE over IPv6 tunneling driver
+May 27 12:49:03 b1235304fc34 kernel: NET: Registered PF_PACKET protocol family
+May 27 12:49:03 b1235304fc34 kernel: NET: Registered PF_KEY protocol family
+May 27 12:49:03 b1235304fc34 kernel: Bridge firewalling registered
+May 27 12:49:03 b1235304fc34 kernel: l2tp_core: L2TP core driver, V2.0
+May 27 12:49:03 b1235304fc34 kernel: l2tp_ppp: PPPoL2TP kernel driver, V2.0
+May 27 12:49:03 b1235304fc34 kernel: 8021q: 802.1Q VLAN Support v1.8
+May 27 12:49:03 b1235304fc34 kernel: sctp: Hash tables configured (bind 256/256)
+May 27 12:49:03 b1235304fc34 kernel: 9pnet: Installing 9P2000 support
+May 27 12:49:03 b1235304fc34 kernel: Key type dns_resolver registered
+May 27 12:49:03 b1235304fc34 kernel: openvswitch: Open vSwitch switching datapath
+May 27 12:49:03 b1235304fc34 kernel: NET: Registered PF_VSOCK protocol family
+May 27 12:49:03 b1235304fc34 kernel: mpls_gso: MPLS GSO support
+May 27 12:49:03 b1235304fc34 kernel: registered taskstats version 1
+May 27 12:49:03 b1235304fc34 kernel: Key type .fscrypt registered
+May 27 12:49:03 b1235304fc34 kernel: Key type fscrypt-provisioning registered
+May 27 12:49:03 b1235304fc34 kernel: Btrfs loaded, zoned=no, fsverity=no
+May 27 12:49:03 b1235304fc34 kernel: Key type encrypted registered
+May 27 12:49:03 b1235304fc34 kernel: clk: Disabling unused clocks
+May 27 12:49:03 b1235304fc34 kernel: erofs: (device vdb): mounted with root inode @ nid 36.
+May 27 12:49:03 b1235304fc34 kernel: VFS: Mounted root (erofs filesystem) readonly on device 254:16.
+May 27 12:49:03 b1235304fc34 kernel: devtmpfs: mounted
+May 27 12:49:03 b1235304fc34 kernel: Freeing unused kernel memory: 5568K
+May 27 12:49:03 b1235304fc34 kernel: Run /init as init process
+May 27 12:49:03 b1235304fc34 kernel:   with arguments:
+May 27 12:49:03 b1235304fc34 kernel:     /init
+May 27 12:49:03 b1235304fc34 kernel:   with environment:
+May 27 12:49:03 b1235304fc34 kernel:     HOME=/
+May 27 12:49:03 b1235304fc34 kernel:     TERM=linux
+May 27 12:49:03 b1235304fc34 kernel:     vsyscall=emulate
+May 27 12:49:03 b1235304fc34 kernel: netlink: 'init': attribute type 4 has an invalid length.
+May 27 12:49:03 b1235304fc34 kernel: fakeowner: loading out-of-tree module taints kernel.
+May 27 12:49:03 b1235304fc34 kernel: grpcfuse module loaded
+May 27 12:49:03 b1235304fc34 kernel: EXT4-fs (vda1): mounted filesystem 46d783e8-40ea-4730-9154-56ba942a12f4 r/w with ordered data mode. Quota mode: none.
+May 27 12:49:03 b1235304fc34 kernel: erofs: (device vdc): mounted with root inode @ nid 36.
+May 27 12:49:03 b1235304fc34 kernel: Adding 1048572k swap on /var/lib/swap.  Priority:-2 extents:5 across:1081340k 
+May 27 12:49:03 b1235304fc34 kernel: capability: warning: `lifecycle-serve' uses 32-bit capabilities (legacy support in use)
+May 27 12:49:03 b1235304fc34 kernel: docker0: port 1(veth93f4fe0) entered blocking state
+May 27 12:49:03 b1235304fc34 kernel: docker0: port 1(veth93f4fe0) entered disabled state
+May 27 12:49:03 b1235304fc34 kernel: veth93f4fe0: entered allmulticast mode
+May 27 12:49:03 b1235304fc34 kernel: veth93f4fe0: entered promiscuous mode
+May 27 12:49:03 b1235304fc34 kernel: docker0: port 1(veth93f4fe0) entered blocking state
+May 27 12:49:03 b1235304fc34 kernel: docker0: port 1(veth93f4fe0) entered forwarding state
+May 27 12:49:03 b1235304fc34 kernel: docker0: port 1(veth93f4fe0) entered disabled state
+May 27 12:49:03 b1235304fc34 kernel: eth0: renamed from veth88590dc
+May 27 12:49:03 b1235304fc34 kernel: docker0: port 1(veth93f4fe0) entered blocking state
+May 27 12:49:03 b1235304fc34 kernel: docker0: port 1(veth93f4fe0) entered forwarding state
+May 27 12:49:04 b1235304fc34 : [origin software="rsyslogd" swVersion="8.2404.0" x-pid="10" x-info="https://www.rsyslog.com"] start

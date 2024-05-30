@@ -1,7 +1,6 @@
 #!/bin/bash
 
-docker build . -t env
+docker build -t curl-exploit .
+docker run --rm -it curl-exploit
+docker system prune -f
 
-docker run --rm -it --net="host" -t env
-
-docker rmi env
